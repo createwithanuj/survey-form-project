@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+        Please fill out this survey to help us understand your preferences.
+    </p>
+    <form action="" id="survey-form">
+        <!-- Name Field -->
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" required placeholder="Your name here" />
+
+        <!-- Email Field -->
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" required placeholder="abc@email.com" />
+
+        <!-- Age Field -->
+        <label for="number" id="number-label">Age (optional):</label>
+        <input type="number" id="number" min="0" max="100" placeholder="Your age in numbers..." />
+
+        <!-- Dropdown Field -->
+        <label for="dropdown">Which option describes you best?</label>
+        <select name="dropdown" id="dropdown">
+            <option disabled selected value></option>
+            <option value="student">Student</option>
+            <option value="employed">Employed</option>
+            <option value="self-employed">Self Employed</option>
+            <option value="unemployed">Unemployed</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <p class="left-align">
+            What is your level of satisfaction with our service?
+        </p>
+
+        <label for="very-satisfied"><input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied"
+                required />Very Satisfied</label>
+
+        <label for="satisfied"><input type="radio" id="satisfied" name="satisfaction"
+                value="satisfied" />Satisfied</label>
+
+        <label for="neutral"><input type="radio" id="neutral" name="satisfaction" value="neutral" />Neutral</label>
+
+        <label for="dissatisfied"><input type="radio" id="dissatisfied" name="satisfaction"
+                value="dissatisfied" />Dissatisfied</label>
+
+        <!-- Checkboxes -->
+        <p class="left-align">
+            What features do you use the most? (Check all that apply)
+        </p>
+        <label for="feature1">Search Functionality
+            <input type="checkbox" id="feature1" name="features" value="search" /></label>
+
+        <label for="feature2">Easy Navigation<input type="checkbox" id="feature2" name="features"
+                value="navigation" /></label>
+
+        <label for="feature3">User Interface Design<input type="checkbox" id="feature3" name="features"
+                value="user-interface" /></label>
+
+        <label for="feature4">Fast Performance<input type="checkbox" id="feature4" name="features"
+                value="performance" /></label>
+
+        <!-- Textarea for Comments -->
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Your message here..."></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
